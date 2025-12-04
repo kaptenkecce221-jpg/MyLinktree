@@ -1,0 +1,100 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #f2f2f2;
+    color: #222;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 420px;
+    text-align: center;
+}
+
+.profile {
+    margin-bottom: 25px;
+}
+
+.avatar {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+.name {
+    font-size: 24px;
+    margin-bottom: 5px;
+}
+
+.bio {
+    font-size: 14px;
+    color: #555;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.link-item {
+    display: block;
+    background: white;
+    padding: 14px;
+    border-radius: 10px;
+    font-size: 16px;
+    color: #222;
+    text-decoration: none;
+    border: 1px solid #ddd;
+    transition: 0.2s;
+}
+
+.link-item:hover {
+    background: #e6e6e6;
+}
+
+.theme-btn {
+    margin-top: 15px;
+    padding: 10px 16px;
+    border: none;
+    background: #222;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.theme-btn:hover {
+    opacity: 0.8;
+}
+
+/* Dark mode */
+body.dark {
+    background: #111;
+    color: white;
+}
+
+body.dark .link-item {
+    background: #222;
+    color: white;
+    border-color: #444;
+}
+
+body.dark .link-item:hover {
+    background: #333;
+}
+
+body.dark .theme-btn {
+    background: white;
+    color: black;
+}
